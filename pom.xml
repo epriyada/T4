@@ -8,6 +8,20 @@
     <sourceDirectory>src</sourceDirectory>
     <plugins>
       <plugin>
+		<groupId>org.apache.tomcat.maven</groupId>
+		<artifactId>tomcat7-maven-plugin</artifactId>
+		<version>2.2</version>
+		<configuration>
+			<url>http://35.154.235.36:8080/manager/text</url>
+			<server>TomcatServer</server>
+			<path>/testproject-1</path>
+      <username>admin</username>
+      <password>password</password>
+		</configuration>
+	</plugin>
+      
+      
+      <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.7.0</version>
         <configuration>
